@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="index">
+            <result>/WEB-INF/views/success.jsp</result>
+        </action>
+
+        <action name="testRequest" class="com.solverpeng.struts2.RequestAction" method="testResource">
+            <result>/WEB-INF/views/success.jsp</result>
+        </action>
+
+        <action name="testRequest2" class="com.solverpeng.struts2.RequestAction2" method="testResource">
+            <result>/WEB-INF/views/success.jsp</result>
+        </action>
+
+        <action name="testRequest3" class="com.solverpeng.struts2.RequestAction3" method="testResource">
+            <result>/WEB-INF/views/success.jsp</result>
+        </action>
+
+        <action name="testRequest4" class="com.solverpeng.struts2.RequestAction4" method="testResource">
+            <result>/WEB-INF/views/success.jsp</result>
+        </action>
+    </package>
+</struts>
